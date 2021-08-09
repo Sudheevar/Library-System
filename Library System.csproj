@@ -12,7 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\sudhe\OneDrive\Desktop\llll\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,9 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Library System/</UpdateUrl>
+    <PublisherName>Bobby</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -47,6 +50,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>63774_library_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AlphaBlendTextBox">
       <HintPath>..\..\..\Downloads\AlphaBlendTextBox_src\bin\Debug\AlphaBlendTextBox.dll</HintPath>
@@ -66,16 +72,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BooksUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BooksUserControl1.Designer.cs">
+      <DependentUpon>BooksUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrowers_UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Borrowers_UserControl1.Designer.cs">
+      <DependentUpon>Borrowers_UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginpage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Loginpage.Designer.cs">
+      <DependentUpon>Loginpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appbody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appbody.Designer.cs">
+      <DependentUpon>Appbody.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Settings_UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings_UserControl1.Designer.cs">
+      <DependentUpon>Settings_UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions_UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transactions_UserControl1.Designer.cs">
+      <DependentUpon>Transactions_UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BooksUserControl1.resx">
+      <DependentUpon>BooksUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowers_UserControl1.resx">
+      <DependentUpon>Borrowers_UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginpage.resx">
+      <DependentUpon>Loginpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appbody.resx">
+      <DependentUpon>Appbody.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +132,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Settings_UserControl1.resx">
+      <DependentUpon>Settings_UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions_UserControl1.resx">
+      <DependentUpon>Transactions_UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,6 +167,7 @@
     <None Include="Resources\8g3nZKyH_400x400.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="63774_library_icon.ico" />
     <Content Include="MyDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -123,6 +175,22 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>MyDatabase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\3440901_box_carton_delivery_ecommerce_package_icon.png" />
+    <None Include="Resources\5760423_reboot_reset_restart_return_icon.png" />
+    <None Include="Resources\4072105_box_delivery_package_parcel_shipping_icon.png" />
+    <None Include="Resources\95887_search_document_zoom_icon.png" />
+    <None Include="Resources\23227_broom_brush_clear_sweep_icon.png" />
+    <None Include="Resources\34237_+_add_plus_icon.png" />
+    <None Include="Resources\95939_document_delete_remove_icon.png" />
+    <None Include="Resources\1343436_add_circle_download_plus_icon %281%29.png" />
+    <None Include="Resources\1343436_add_circle_download_plus_icon.png" />
+    <None Include="Resources\book-png1.png" />
+    <None Include="Resources\add-symbol1.png" />
+    <None Include="Resources\book-png.png" />
+    <None Include="Resources\LoginBgI2.jpg" />
+    <None Include="Resources\585e4adacb11b227491c3392.png" />
+    <None Include="Resources\add-symbol.png" />
+    <None Include="Resources\background-topic-training-education-desk-with-books-bookcase-window-defocus-school-concept-greeting-card-with-start-learning_95018-358.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -135,6 +203,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Pictures2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
